@@ -15,9 +15,7 @@ def get_pisano_period(m):
 
 
 def get_fibonacci_huge_efficient(n, m):
-    
     remainder = n % get_pisano_period(m)
-
     first, second = 0, 1
     res = remainder
 
