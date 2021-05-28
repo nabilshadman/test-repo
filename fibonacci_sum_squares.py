@@ -1,6 +1,7 @@
 # Uses python3
 from sys import stdin
 
+
 def get_pisano_period(m):
     a, b = 0, 1
     c = a + b
@@ -13,7 +14,7 @@ def get_pisano_period(m):
         if (a == 0 and b == 1):
             return _ + 1
 
-
+        
 def get_fibonacci_huge_efficient(n, m):
     remainder = n % get_pisano_period(m)
     first, second = 0, 1
@@ -26,7 +27,7 @@ def get_fibonacci_huge_efficient(n, m):
     
     return res % m
     
-
+    
 def fibonacci_sum_squares_efficient(n):
     return (get_fibonacci_huge_efficient(n, 10) * get_fibonacci_huge_efficient(n+1, 10)) % 10
 
